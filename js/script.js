@@ -212,6 +212,7 @@ function start() { // Inicio da função start()
 
 				if (colisao3.length>0) {
 					
+					velocidade=velocidade+0.1;
 					pontos=pontos+100;
 					inimigo1X = parseInt($("#inimigo1").css("left"));
 					inimigo1Y = parseInt($("#inimigo1").css("top"));
@@ -369,17 +370,17 @@ function start() { // Inicio da função start()
 			
 			if (energiaAtual==3) {
 				
-				$("#energia").css("background-image", "url(imgs/energia3.png)");
+				$("#energia").css("background-image", "url(assets/img/energia3.png)");
 			}
 
 			if (energiaAtual==2) {
 				
-				$("#energia").css("background-image", "url(imgs/energia2.png)");
+				$("#energia").css("background-image", "url(assets/img/energia2.png)");
 			}
 
 			if (energiaAtual==1) {
 				
-				$("#energia").css("background-image", "url(imgs/energia1.png)");
+				$("#energia").css("background-image", "url(assets/img/energia1.png)");
 			}
 
 			if (energiaAtual==0) {
